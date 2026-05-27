@@ -1,42 +1,18 @@
-{
-  "building": "A",
-  "floors": [
-    {
-      "id": "rdcA",
-      "name": "Rez-de-chaussée",
-      "file": "rdcA.geojson",
-      "level": 0,
-      "base_z": 0,
-      "height": 3.5,
-      "floor_color": "#34495e",
-      "room_color": "#3498db",
-      "visible": true
-    },
-    {
-      "id": "1erA",
-      "name": "1er Étage",
-      "file": "1erA.geojson",
-      "level": 1,
-      "base_z": 3.5,
-      "height": 3.5,
-      "floor_color": "#2c3e50",
-      "room_color": "#e74c3c",
-      "visible": true
-    }
-  ],
-  "styles": {
-    "bureau": {
-      "opacity": 0.9,
-      "extrusion": true
-    },
-    "wc": {
-      "color": "#95a5a6"
-    },
-    "salle": {
-      "color": "#9b59b6"
-    },
-    "etage": {
-      "opacity": 0.15
-    }
+[
+  {
+    "id": "rdcA",
+    "name": "Rez-de-chaussée",
+    "file": "rdcA.geojson",
+    "base_z": 0,
+    "height_z": 3.5,
+    "color": "#3498db"
+  },
+  {
+    "id": "1erA",
+    "name": "1er Étage",
+    "file": "1erA.geojson",
+    "base_z": 3.5,
+    "height_z": 7.0,
+    "color": "#e74c3c"
   }
-}
+]
