@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rdcA",
+    "name": "Rez-de-chaussée",
+    "file": "rdcA.geojson",
+    "base_z": 0,
+    "height_z": 3.5,
+    "color": "#3498db"
+  },
+  {
+    "id": "1erA",
+    "name": "1er Étage",
+    "file": "1erA.geojson",
+    "base_z": 3.5,
+    "height_z": 7.0,
+    "color": "#e74c3c"
+  }
+]
