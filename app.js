@@ -57,8 +57,8 @@ function pipelineInitialisation(layers) {
     const tabPromesses = [];
     const empriseGlobale = new maplibregl.LngLatBounds();
 
-    layers.forEach(layer => {
-        // Chargement individuel de chaque fichier spécifié dans le layers.json
+layers.floors.forEach(layer => {
+    // Chargement individuel de chaque fichier spécifié dans le layers.json
         const requete = fetch(layer.file)
             .then(res => {
                 if (!res.ok) throw new Error(`Fichier ${layer.file} inaccessible.`);
