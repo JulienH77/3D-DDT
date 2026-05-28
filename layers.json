@@ -1,18 +1,38 @@
 [
   {
-    "id": "rdcA",
-    "name": "Rez-de-chaussée",
+    "id": "rdcA-floor",
+    "name": "Rez-de-chaussée A - Sol",
     "file": "rdcA.geojson",
+    "filter": ["==", ["get", "type"], "Etage"],
     "base_z": 0,
-    "height_z": 3.5,
+    "height_z": 0.1,
+    "color": "#95a5a6"
+  },
+  {
+    "id": "rdcA-rooms",
+    "name": "Rez-de-chaussée A - Pièces",
+    "file": "rdcA.geojson",
+    "filter": ["!=", ["get", "type"], "Etage"],
+    "base_z": 0,
+    "height_z": 2.8,
     "color": "#3498db"
   },
   {
-    "id": "1erA",
-    "name": "1er Étage",
+    "id": "1erA-floor",
+    "name": "1er étage A - Sol",
     "file": "1erA.geojson",
+    "filter": ["==", ["get", "type"], "Etage"],
     "base_z": 3.5,
-    "height_z": 7.0,
+    "height_z": 3.6,
+    "color": "#95a5a6"
+  },
+  {
+    "id": "1erA-rooms",
+    "name": "1er étage A - Pièces",
+    "file": "1erA.geojson",
+    "filter": ["!=", ["get", "type"], "Etage"],
+    "base_z": 3.5,
+    "height_z": 6.3,
     "color": "#e74c3c"
   }
 ]
