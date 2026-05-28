@@ -1,38 +1,38 @@
 [
   {
     "id": "rdcA-floor",
-    "name": "Rez-de-chaussée A - Sol",
+    "name": "RDC A - Sol",
     "file": "rdcA.geojson",
-    "filter": ["==", ["get", "type"], "Etage"],
+    "filter": ["==", ["get", "name"], "rez de chaussée Bâtiment A"],
     "base_z": 0,
-    "height_z": 0.1,
-    "color": "#95a5a6"
+    "height_z": 0.15,
+    "color": "#666666"
   },
   {
     "id": "rdcA-rooms",
-    "name": "Rez-de-chaussée A - Pièces",
+    "name": "RDC A - Pièces",
     "file": "rdcA.geojson",
-    "filter": ["!=", ["get", "type"], "Etage"],
-    "base_z": 0,
+    "filter": ["!=", ["get", "name"], "rez de chaussée Bâtiment A"],
+    "base_z": 0.15,
     "height_z": 2.8,
     "color": "#3498db"
   },
   {
     "id": "1erA-floor",
-    "name": "1er étage A - Sol",
+    "name": "1er A - Sol",
     "file": "1erA.geojson",
-    "filter": ["==", ["get", "type"], "Etage"],
+    "filter": ["==", ["get", "name"], "1er Batiment A"],
     "base_z": 3.5,
-    "height_z": 3.6,
-    "color": "#95a5a6"
+    "height_z": 3.65,
+    "color": "#777777"
   },
   {
     "id": "1erA-rooms",
-    "name": "1er étage A - Pièces",
+    "name": "1er A - Pièces",
     "file": "1erA.geojson",
-    "filter": ["!=", ["get", "type"], "Etage"],
-    "base_z": 3.5,
-    "height_z": 6.3,
+    "filter": ["!=", ["get", "name"], "1er Batiment A"],
+    "base_z": 3.65,
+    "height_z": 6.2,
     "color": "#e74c3c"
   }
 ]
