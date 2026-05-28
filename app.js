@@ -86,18 +86,21 @@ layers.forEach(layer => {
                 });
 
                 // Génération de la couche d'extrusion 3D sur la base des altitudes du JSON
-                map.addLayer({
-                    'id': layer.id + '-extrusion',
-                    'type': 'fill-extrusion',
-                    'source': layer.id,
-                    'layout': { 'visibility': 'visible' },
-                    'paint': {
-                        'fill-extrusion-color': layer.color || '#3388ff',
-                        'fill-extrusion-base': layer.base_z,
-                        'fill-extrusion-height': layer.height_z,
-                        'fill-extrusion-opacity': 0.85
-                    }
-                });
+map.addLayer({
+    'id': layer.id + '-extrusion',
+    'type': 'fill-extrusion',
+    'source': layer.id,
+    'filter': layer.filter,
+    'layout': { 
+        'visibility': 'visible' 
+    },
+    'paint': {
+        'fill-extrusion-color': layer.color || '#3388ff',
+        'fill-extrusion-base': layer.base_z,
+        'fill-extrusion-height': layer.height_z,
+        'fill-extrusion-opacity': 0.85
+    }
+});
 
                 // Génération dynamique de l'interface graphique de contrôle
                 const label = document.createElement('label');
